@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio sunil</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<style>
+html,body {
+height: 100%;
+}
+
+body {
+background: #0F1215;
+font: 16px/30px "merriweather-regular", serif;
+font-weight: normal;
+color: #575859;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "raleway-heavy", sans-serif;
+	color: #FFFFFF;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	margin: 18px 0 15px;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	font-weight: inherit;
+}
+
+h1 {
+	font-size: 30px;
+	line-height: 36px;
+	margin-top: 0;
+	letter-spacing: -1px;
+}
+
+h2 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+h3 {
+	font-size: 20px;
+	line-height: 30px;
+}
+
+h4 {
+	font-size: 17px;
+	line-height: 30px;
+}
+
+h5 {
+	font-size: 14px;
+	line-height: 30px;
+	margin-top: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+h6 {
+	font-size: 13px;
+	line-height: 30px;
+	margin-top: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+p {
+	margin: 15px 0 15px 0;
+}
+
+p img {
+	margin: 0;
+}
+
+p.lead {
+	font: 20px/36px "merriweather-light", serif;
+	color: #707273;
+}
+
+em {
+	font: 16px/30px "merriweather-italic", serif;
+	font-style: normal;
+}
+
+strong,
+b {
+	font: 16px/30px "merriweather-bold", serif;
+	font-weight: normal;
+}
+
+small {
+	font-size: 11px;
+	line-height: inherit;
+}
+/* Lists  
+--------------------------------------------------------------------- */
+ul,
+ol {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+ul {
+	list-style: disc;
+	margin-left: 17px;
+}
+
+dl {
+	margin: 0 0 15px 0;
+}
+
+dt {
+	margin: 0;
+	color: #fdc501;
+}
+
+dd {
+	margin: 0 0 0 20px;
+}
+/* Floated image  
+--------------------------------------------------------------------- */
+img.pull-right {
+	margin: 12px 0px 0px 18px;
+}
+
+img.pull-left {
+	margin: 12px 18px 0px 0px;
+}
+form {
+	margin-bottom: 30px;
+}
+
+fieldset {
+	margin: 0 0 30px 0;
+	padding: 0;
+	border: none;
+}
+
+input,
+button {
+	-webkit-font-smoothing: antialiased;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+	display: block;
+	padding: 18px 20px;
+	margin: 0 0 12px 0;
+	border: 0;
+	outline: none;
+	vertical-align: middle;
+	color: #a3a4a6;
+	font-family: "raleway-bold", sans-serif;
+	font-size: 15px;
+	line-height: 24px;
+	border-radius: 3px;
+	max-width: 100%;
+	background: rgba(255, 255, 255, 0.1);
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+textarea {
+	min-height: 252px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+	color: #000000;
+	background: #FFFFFF;
+}
+
+.button,
+.button:visited,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	display: inline-block;
+	font: 16px/30px "raleway-heavy", sans-serif;
+	padding: 9px 16px;
+	margin: 0 3px 6px 0;
+	background: #fdc501;
+	color: #000000;
+	text-decoration: none;
+	cursor: pointer;
+	height: auto;
+	text-align: center;
+	border: none;
+	-webkit-appearance: none;
+	-webkit-font-smoothing: inherit;
+	border-radius: 3px;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+	color: #FFFFFF;
+	background: #e64e04;
+}
+
+label,
+legend {
+	font: 15px/30px "raleway-bold", sans-serif;
+	margin: 12px 0;
+	color: #252525;
+	display: block;
+}
+
+label span,
+legend span {
+	color: #575859;
+	font: 16px/30px "raleway-bold", sans-serif;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	font-size: 15px;
+	color: #575859;
+}
+
+input[type="checkbox"] {
+	display: inline;
+}
+
+/** 
+/* 06. =header styles
+/* =================================================================== */
+
+header {
+	height: 66px;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 600;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;  
+
+	
+}
+header.opaque {
+	background: black;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* header logo */
+header .logo {
+	background: #fdc501;
+	float: left;
+	width: auto;
+	margin-left: 15px;
+	margin-right: 30px;
+	z-index: 600;    
+	
+	/* add position relative since z-index only applies to  
+	elements that have been given an explicit position */
+	position: relative;
+	text-align: center;
+    padding-top: 20px;
+}
+
+header .logo a {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-shadow: none;
+	color: black;
+	width: 114px;
+	height: 66px;
+	background-size: 61px 14px;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+/* header social */
+header .header-social {
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 66px;
+	margin-top: 0;
+	margin-left: 30px;
+	padding-left: 36px;
+	border-left: 1px solid rgba(150, 150, 150, 0.2);
+	float: left;
+	position: relative;
+	top: -1px;
+}
+
+header .header-social li {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+header .header-social li a {
+	color: #FFFFFF;
+}
+
+header .header-social li a:hover {
+	color: #fdc501;
+}
+
+/* media queries:  
+/* header/header components */
+@media only screen and (max-width:880px) {
+	header .header-social {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width:768px) {
+	header {
+		background: black;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	header .row {
+		width: 100%;
+	}
+
+	header .logo {
+		margin-left: -30px;
+	}
+
+}
+
+/* primary navigation
+--------------------------------------------------------------------- */
+#nav-wrap,
+#nav-wrap ul,
+#nav-wrap li,
+#nav-wrap a {
+	margin: 0;
+	padding: 0;
+}
+
+/* nav-wrap */
+#nav-wrap {
+	font: 13px "raleway-heavy", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	float: left;  
+}
+
+/* hide toggle button */
+#nav-wrap > a {
+	display: none;
+}
+
+ul#nav {
+	min-height: 66px;
+	display: inline-block;
+	width: auto;  
+
+	/* left align the menu */
+	text-align: left;
+}
+
+ul#nav li {
+	position: relative;
+	list-style: none;
+	display: inline-block;
+	height: 66px;    
+}
+
+/* Links */
+ul#nav li a {
+
+	/* 14px padding top + 14px padding bottom + 38px line-height = 66px */
+	display: block;
+	padding: 14px 12px;
+	line-height: 38px;
+	text-decoration: none;
+	text-align: left;
+	color: #FFFFFF;
+	position: relative;
+	-moz-transition: color 0.2s ease-in-out;
+	-o-transition: color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+}
+
+ul#nav li a:hover {
+	color: #fdc501;
+}
+
+ul#nav li a:active {
+	background-color: transparent !important;
+}
+
+ul#nav li.current a {
+	color: #fdc501;
+}
+
+ul#nav li.current a:after {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: 40px;
+	height: 2px;
+	margin-left: -23px;
+	background-color: white;
+	content: '\0020';
+	display: block;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+/* 
+/* 09. =services
+/* =================================================================== */
+
+#services {
+	background: #12151B;
+	padding-top: 120px;
+	padding-bottom: 120px;
+	border-bottom: 1px solid #15191d;
+}
+
+.service-list {
+	margin: 18px -2px 0;
+}
+
+.service-list .bgrid {
+	padding: 0 22px 6px;
+}
+
+.service-list .bgrid {
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	border-radius: 5px;
+}
+
+.service-list .bgrid:hover {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width:600px) {
+	.service-list .bgrid:hover {
+		background: inherit;
+	}
+
+}
+
+#services .service-list h3 {
+	font: 18px/36px "raleway-heavy", sans-serif;
+	color: #fdc501;
+	padding: 0;
+	text-transform: none;
+	text-align: left;
+	margin-bottom: 6px;
+}
+
+/* media queries:  
+/* #services / .service-list */
+
+@media only screen and (max-width:1024px) {
+	.service-list {
+		margin: 18px 0 0;
+	}
+
+	.service-list .bgrid {
+		padding: 0 18px 6px;
+	}
+
+}
+
+@media only screen and (max-width:768px) {
+	.service-list .bgrid {
+		padding: 0 15px 6px;
+	}
+
+}
+
+@media only screen and (max-width:600px) {
+	.service-list .bgrid {
+		padding: 0 10px 6px;
+	}
+
+}
+
+@media only screen and (max-width:400px) {
+	.service-list .bgrid {
+		padding: 0 0 6px;
+	}
+
+}
+
+
+/* 
+/* 10. =about
+/* =================================================================== */
+
+#about {
+	background: #111417;
+	padding-top: 120px;
+	padding-bottom: 120px;
+	border-bottom: 1px solid #15191d;
+}
+
+#about h3 {
+	font: 18px/36px "raleway-heavy", sans-serif;
+	color: #fdc501;
+	text-transform: none;
+	letter-spacing: 0;
+	padding: 0;
+	margin-bottom: 6px;
+}
+
+/* process
+-------------------------------------------------------------- */
+.process {
+	margin-top: 12px;
+}
+
+.process .bgrid {
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	border-radius: 5px;
+}
+
+
+
+@media only screen and (max-width:600px) {
+	.process .bgrid:hover {
+		background: inherit;
+	}
+
+}
+.row {
+    width: 94%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.process .bgrid:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.bgrid-sixth .bgrid:nth-child(6n+1), .bgrid-fourth .bgrid:nth-child(4n+1), .bgrid-third .bgrid:nth-child(3n+1), .bgrid-half .bgrid:nth-child(2n+1) {
+    clear: both;
+}
+.process .bgrid {
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+.bgrid-half .bgrid {
+    width: 50%;
+}
+.bgrid {
+    padding: 0 20px;
+}
+
+ .bgrid-half .bgrid:nth-child(2n+1) {
+    clear: both;
+}
+/* Call To Action 
+------------------------------------------------------------------ */
+#call-to-action {
+	margin-top: 30px;
+	padding-top: 36px;
+	text-align: center;
+}
+
+#call-to-action h2,
+#call-to-action p {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+#call-to-action p {
+	font: 20px/36px "merriweather-light", serif;
+	color: #707273;
+	width: 75%;
+}
+
+#call-to-action .section-ads {
+	padding-top: 36px;
+	border-top: 1px dotted rgba(150, 150, 150, 0.1);
+}
+
+#call-to-action h2 {
+	font: 30px/36px "raleway-bold", sans-serif;
+	color: #FFFFFF;
+	letter-spacing: -0.5px;
+	margin-bottom: 24px;
+}
+
+#call-to-action h2 span {
+	color: #fdc501;
+}
+
+#call-to-action h2 a,
+#call-to-action span {
+	color: #FFFFFF;
+}
+
+#call-to-action h2 span {
+	color: #ffd900;
+}
+
+#call-to-action .action a {
+	font: 15px/60px "raleway-heavy", sans-serif;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	height: 60px;
+	display: block;
+	padding: 0 30px;
+	max-width: 400px;
+	width: 100%;
+	background: #e64e04;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+	margin: 24px auto 0;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+#call-to-action .action a:hover {
+	background: #fdc501;
+	color: #000000;
+}
+
+/* media queries - #call-to-action */
+@media only screen and (max-width:600px) {
+	#call-to-action h2,
+	#call-to-action p {
+		width: 85%;
+	}
+
+	#call-to-action h2 {
+		font: 28px/36px "raleway-bold", sans-serif;
+	}
+
+	#call-to-action p {
+		font: 18px/33px "merriweather-light", serif;
+		width: 80%;
+	}
+
+}
+
+@media only screen and (max-width:400px) {
+	#call-to-action h2,
+	#call-to-action p {
+		width: auto;
+	}
+
+	#call-to-action h2 {
+		font: 26px/36px "raleway-bold", sans-serif;
+	}
+
+	#call-to-action p {
+		font: 16px/30px "merriweather-light", serif;
+	}
+
+}
+/** 
+/* 12. =contact
+/* =================================================================== */
+
+#contact {
+	background: #12151B;
+	padding-top: 120px;
+	padding-bottom: 138px;
+	overflow: hidden;
+	border-bottom: 1px solid #15191d;  
+}
+
+#contact h3 {
+	font: 18px/36px "raleway-heavy", sans-serif;
+	color: #fdc501;
+	padding: 0;
+	margin-bottom: 6px;
+}
+
+#contact .left {
+	padding-right: 35px;
+}
+
+#contact .right {
+	padding-left: 35px;
+	position: relative;
+	top: -6px;
+}
+
+/* media queries:  
+/* #contact / .left .right */
+
+@media only screen and (max-width:1024px) {
+	#contact .left {
+		padding-right: 30px;
+	}
+
+	#contact .right {
+		padding-left: 30px;
+	}
+
+}
+
+@media only screen and (max-width:768px) {
+	#contact .left,
+	#contact .right {
+		width: 100%;
+		padding: 0 15px;
+	}
+
+	#contact .right p.lead {
+		font: 18px/36px "merriweather-light", serif;
+	}
+
+}
+
+@media only screen and (max-width:600px) {
+	#contact .left,
+	#contact .right {
+		padding: 0 10px;
+	}
+
+	#contact .right p.lead {
+		font: 17px/33px "merriweather-light", serif;
+	}
+
+}
+
+@media only screen and (max-width:400px) {
+	#contact .left,
+	#contact .right {
+		padding: 0;
+	}
+
+}
+
+/* contact form */
+#contact form {
+	margin-top: 12px;
+	margin-bottom: 30px;
+}
+
+#contact form div {
+	position: relative;
+}
+
+#contact form div:before,
+#contact form div:after {
+	content: "";
+	display: table;
+}
+
+#contact form div:after {
+	clear: both;
+}
+
+#contact form div label {
+	font: 11px/24px "raleway-bold", sans-serif;
+	position: absolute;
+	bottom: 3px;
+	right: 6px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 0 20px;
+	color: #e64e04;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+#contact textarea,
+#contact select {
+	margin-bottom: 45px;
+	width: 100%;
+}
+
+#contact button.submitform {
+	font: 15px/30px "raleway-heavy", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	height: 60px;
+	display: inline-block;
+	padding: 15px 30px;
+	width: 100%;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+#message-warning,
+#message-success {
+	display: none;
+	background: #0F1215;
+	border-radius: 3px;
+	padding: 24px;
+	margin-bottom: 36px;
+	width: 100%;
+}
+
+#message-warning {
+	color: #e64e04;
+}
+
+#message-success {
+	color: #fdc501;
+}
+
+#message-warning i,
+#message-success i {
+	margin-right: 10px;
+}
+.copyright {
+	clear: both;
+	margin: 15px 0;
+	padding: 24px 18px 6px 18px;
+	font: 14px/24px "raleway-medium", sans-serif;
+	letter-spacing: .5px;
+	text-align: center;
+}
+.copyright li {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+</style>
+</head>
+<body>
+   <header id="main-header">
+
+   	<div class="row">
+
+	      <div class="logo">
+	         <a href="index.html">SUNIL</a>
+	      </div>
+
+	      <nav id="nav-wrap">         
+	         
+	         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">
+	         	<span class="menu-icon">Menu</span>
+	         </a>
+         	<a class="mobile-btn" href="#" title="Hide navigation">
+         		<span class="menu-icon">Menu</span>
+         	</a>            
+
+	         <ul id="nav" class="nav">
+	            <li><a class="smoothscroll" href="#hero">Home.</a></li>
+		         <li class="current"><a class="smoothscroll" href="#portfolio">Works.</a></li>
+	            <li><a class="smoothscroll" href="#services">Services.</a></li>
+	            <li><a class="smoothscroll" href="#about">About.</a></li>
+	            <li><a class="smoothscroll" href="#contact">Contact.</a></li>
+	         </ul> <!-- end #nav -->
+
+	      </nav> <!-- end #nav-wrap -->
+
+	      <ul class="header-social">
+	        	<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	        	<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	        	<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+	      </ul>      
+
+	   </div>
+
+   </header> <!-- end header -->
+    <!-- Services Section
+   ================================================== -->
+   <section id="services">
+
+   	<div class="row section-head">
+
+      	<div class="twelve columns">
+
+      		<h1>Our Awesome Services<span>.</span></h1>
+
+	         <hr />      	         
+
+	         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+	         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+	         voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	         </p>
+
+	      </div>
+
+      </div> <!-- end section-head -->
+
+      <div class="row mobile-no-padding">      	
+
+	      <div class="service-list bgrid-third s-bgrid-half tab-bgrid-whole group">
+
+	      	<div class="bgrid">	               
+
+	            <h3>Marketing.</h3>
+
+	            <div class="service-content">	                  
+		            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	         		</p> 
+	         	</div>  
+
+				</div> <!-- end bgrid -->
+
+				<div class="bgrid">	              
+
+	            <h3>Videography.</h3>                  
+
+	            <div class="service-content">	                  
+		            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	         		</p> 
+	            </div>	              
+
+			   </div> <!-- end bgrid -->
+
+			   <div class="bgrid">	              
+
+	            <h3>Photography.</h3>
+
+	            <div class="service-content">		                  
+		            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	        			</p> 
+	            </div> 	               
+
+			   </div> <!-- end bgrid -->
+
+				<div class="bgrid">	              
+	                  
+	            <h3>Branding.</h3> 
+
+	            <div class="service-content">	                  
+		            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	         		</p> 
+	            </div>                
+
+				</div> <!-- end bgrid -->
+
+			   <div class="bgrid">
+
+	            <h3>Web Design.</h3>
+
+	            <div class="service-content">	                  
+		            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	        			</p> 
+	            </div>	               
+
+			   </div> <!-- end bgrid -->
+
+			   <div class="bgrid">	               
+
+	            <h3>Web Development.</h3>
+
+	            <div class="service-content">
+		            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	        			</p> 
+	            </div>	               
+
+			   </div> <!-- end bgrid -->
+
+	      </div> <!-- end service-list -->	      
+
+      </div> <!-- end row -->      
+
+   </section> <!-- end services -->
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+   	<div class="row section-head">
+
+      	<div class="twelve columns">
+
+      		<h1>Who Are We<span>.</span></h1>
+
+	         <hr />     	    
+
+	         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+	         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+	         voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	         </p>
+
+	      </div> <!-- end section-head -->
+
+      </div>
+
+      <div class="row mobile-no-padding">       	
+
+      	<div class="process bgrid-half tab-bgrid-whole group">
+
+      		<div class="bgrid">
+
+			      <h3>Our Process.</h3>	
+
+			      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+			      </p>
+
+		   	</div>
+
+      		<div class="bgrid">
+
+			     	<h3>Our Approach.</h3>
+
+			     	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+			   	</p>	
+
+		      </div> 
+
+		      <div class="bgrid">
+
+			     	<h3>Our Goal.</h3>	
+
+			     	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+			      </p>
+
+		      </div>
+
+		      <div class="bgrid">
+
+			      <h3>Our Mission.</h3>
+
+			      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+			      </p>	
+
+		      </div>
+
+      	</div> <!-- end process -->      	
+
+     	</div> <!-- end row -->
+
+      <div id="call-to-action">	       
+
+		   <div class="row section-ads">
+
+		      <div class="twelve columns">		         		
+
+			      <h2><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Styleshout Recommends Dreamhost<span>.</span></a></h2>
+
+			      <p>
+			      Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
+					Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>. 
+					<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. -->					
+					</p>
+
+					<div class="action">
+			         <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT" >Sign Up Now</a>
+	         	</div>
+
+			   </div>
+
+		   </div> <!-- end section-ads -->		         	         
+
+	   </div> <!-- end call-to-action -->	  
+	    <!-- contact
+   ================================================== -->
+   <section id="contact">
+
+   	<div class="row section-head">
+
+   		<div class="twelve columns">
+
+	         <h1>Get In Touch With Us<span>.</span></h1>
+
+	         <hr />	        
+
+	      </div>
+
+      </div> <!-- end section-head -->
+
+      <div class="row">
+      	
+      	<div id="contact-form" class="six columns tab-whole left">
+
+            <!-- form -->
+            <form name="contactForm" id="contactForm" method="post" action=""  >
+      			<fieldset>
+
+                  <div class="group">
+ 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minLength="2" required />
+                  </div>
+                  <div>
+	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required />
+	               </div>
+                  <div>
+	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject"  value="" />
+	               </div>                       
+                  <div>
+	                 	<textarea name="contactMessage"  id="contactMessage" placeholder="message" rows="10" cols="50" required ></textarea>
+	               </div>                      
+                  <div>
+                     <button class="submitform">Submit</button>
+                     <div id="submit-loader">
+                        <div class="text-loader">Sending...</div>                             
+       				      <div class="s-loader">
+								  	<div class="bounce1"></div>
+								  	<div class="bounce2"></div>
+								  	<div class="bounce3"></div>
+								</div>
+							</div>
+                  </div>
+
+      			</fieldset>
+      		</form> <!-- Form End -->
+
+            <!-- contact-warning -->
+            <div id="message-warning"></div>
+            <!-- contact-success -->
+      		<div id="message-success">
+               <i class="icon-ok"></i>Your message was sent, thank you!<br />
+      		</div>
+
+         </div>
+
+         <div class="six columns tab-whole right">
+
+            <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+
+	         <h3 class="address">Come Visit</h3>
+
+	         <p>
+            1600 Amphitheatre Parkway<br>
+            Mountain View, CA<br>
+            94043 US
+            </p>
+
+            <h3>Contact Numbers:</h3>
+			   <p>Phone: (000) 555 1212<br>
+			   	Mobile: (000) 555 0100<br>
+			     	Fax: (000) 555 0101
+			   </p>
+               	
+         </div>     	
+
+      </div> <!-- end row -->     
+
+   </section>  <!-- end contact -->
+ <ul class="copyright">
+         	<li> Copyright</li> 
+         	<li>Design by SUNIL KUMAR</li>
+         </ul>
+</body>
+</html>
